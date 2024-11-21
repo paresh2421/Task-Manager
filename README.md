@@ -1,0 +1,1 @@
+A simple task manager made with nodejs in the backend and vanilla js in the frontend.
