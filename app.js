@@ -6,11 +6,14 @@ require('dotenv').config();
 const pageNotFound = require('./middleware/404');
 const errorHandler = require('./middleware/error-handler');
 
+const auth = require('./routes/auth');
+
 // middleware
 app.use(express.static('./public'));
 app.use(express.json());
 
 //routes
+app.use('/api/v1/auth', auth);
 app.use('/api/v1/tasks', tasks);
 
 app.use(pageNotFound);
