@@ -472,3 +472,51 @@ form > :last-child {
 .login-btn:hover {
   background-color: #0056b3;
 }
+
+/* register form */
+
+.register-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
+  padding: 16px;
+}
+
+.register-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 336px;
+  gap: 24px;
+}
+
+.page-title{
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-wrapper{
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.textInput{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.actionBtn{
+  cursor: default;
+}

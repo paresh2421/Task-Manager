@@ -1,7 +1,7 @@
 const UserSchema = require('../models/User');
 const { StatusCodes } = require('http-status-codes');
 const bcryptjs = require('bcryptjs');
-
+const { createCustomError } = require('../errors/custom-error')
 
 const register = async(req, res) => {
     const user = await UserSchema.create({ ...req.body });
